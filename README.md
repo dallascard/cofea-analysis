@@ -8,7 +8,7 @@ More information, along with interactive versions of all figures in the paper, a
 
 #### Data
 
-For this work, we obtained a copy of COFEA from the original creators, and unfortunately cannot redistribute it here.
+For this work, we obtained a copy of COFEA from the original creators, and unfortunately cannot redistribute it here. More information about COFEA can be found here: [https://lcl.byu.edu/projects/cofea/](https://lcl.byu.edu/projects/cofea/)
 
 In addition, we have made use of the following data sources:
 - The Pittsburgh Gazette, obtained from Accessible Archives, now History Commons.
