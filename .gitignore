@@ -1,0 +1,11 @@
+data
+notebooks
+plots
+plotting/plots
+
+.DS_Store
+*/.DS_Store
+
+*/__pycache__
+
+
