@@ -18,11 +18,11 @@ from common.bigrams import concat_ngrams
 def main():
     usage = "%prog"
     parser = OptionParser(usage=usage)
-    parser.add_option('--model1', type=str, default='/data/dalc/COFEA/word2vec/all_raw_vectors.gensim',
+    parser.add_option('--model1', type=str, default='/data/dalc/COFEA/word2vec/all_raw_train_1760-1800.txt.gensim',
                       help='First model file (base): default=%default')
-    parser.add_option('--model2', type=str, default='/data/dalc/data/COCA/word2vec/all_raw_vectors.gensim',
+    parser.add_option('--model2', type=str, default='/data/dalc/data/COCA/word2vec/all_raw_vectors.txt.gensim',
                       help='Second model file (to align): default=%default')
-    parser.add_option('--outfile', type=str, default='/data/dalc/data/COCA/word2vec/aligned_to_cofea.gensim',
+    parser.add_option('--outfile', type=str, default='/data/dalc/data/COCA/word2vec/COCA_aligned_to_cofea.gensim',
                       help='Outfile: default=%default')
     parser.add_option('--const-dir', type=str, default=None,
                       help='Constitution directory (to exclude constitutional terms from alignment): default=%default')

@@ -13,11 +13,11 @@ from gensim.models import Word2Vec
 def main():
     usage = "%prog"
     parser = OptionParser(usage=usage)
-    parser.add_option('--model1', type=str, default='data/COFEA/word2vec/all_raw_vectors.gensim',
+    parser.add_option('--model1', type=str, default='data/COFEA/word2vec/all_raw_train_1760-1800.txt.gensim',
                       help='First model file (base): default=%default')
-    parser.add_option('--model2', type=str, default='data/COCA/word2vec/aligned_to_cofea.gensim',
+    parser.add_option('--model2', type=str, default='data/COCA/word2vec/COCA_aligned_to_cofea.gensim',
                       help='Second model file (to align): default=%default')
-    parser.add_option('--outfile', type=str, default='data/COCA/word2vec/aligned_to_cofea_dist.json',
+    parser.add_option('--outfile', type=str, default='data/COCA/word2vec/COCA_aligned_to_cofea.json',
                       help='Outfile: default=%default')
     parser.add_option('--euclid', action="store_true", default=False,
                       help="Use Euclidean distance rather than cosine: default=%default")

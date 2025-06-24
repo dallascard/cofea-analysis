@@ -128,8 +128,8 @@ All steps needed to replicate the analyses and plots in the paper are given belo
 - train COFEA word vectors: `python -m word2vec.train_vectors --infile /data/dalc/COFEA/word2vec/all_raw_train_1760-1800.txt --lower`
 - train COCA word vectors: `python -m word2vec.train_vectors --infile /data/dalc/COCA/word2vec/all_raw_train.txt --lower`
 -->
-- align the two sets of vectors: `python -m word2vec.align`
-- compute the similarity values: `python -m word2vec.compute_vector_sim`
+- align the two sets of vectors: `python -m word2vec.align --model1 /data/dalc/COFEA/word2vec/all_raw_train_1760-1800.txt.gensim --model2 /data/dalc/COCA/word2vec/all_raw_train.txt.gensim --outfile /data/dalc/COFEA/word2vec/COCA_aligned_to_cofea.gensim`
+- compute the similarity values: `python -m word2vec.compute_vector_sim --model1 /data/dalc/COFEA/word2vec/all_raw_train_1760-1800.txt.gensim --model2 /data/dalc/COFEA/word2vec/COCA_aligned_to_cofea.gensim --outfile /data/dalc/COFEA/word2vec/COCA_aligned_to_cofea.json`
 
 #### word2vec for variation across sources (optional)
 - export legal text: `python -m word2vec.export_raw_text --legal-only --pre 1801 --post 1759 --alt-spellings --bigrams --lower`
