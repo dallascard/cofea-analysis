@@ -139,6 +139,9 @@ All steps needed to replicate the analyses and plots in the paper are given belo
 
 #### Counting (optional)
 - get token counts for certain ranges (e.g., before 1787) or subsets (evans, founders, legal): `python -m counting.count_tokens` 
+- get token counts for evans: `python -m counting.count_tokens --source evans` 
+- get token counts for founders: `python -m counting.count_tokens --source founders` 
+- get token counts for legal: `python -m counting.count_tokens --legal-only` 
 - get distinctive tokens per corpus: `python -m counting.log_odds --pre 1801 --post 1759`
 
 #### Plots
